@@ -15,4 +15,15 @@ class TriangleClassifierTest {
         String actualResult = TriangleClassifier.classifyTriangle(side1,side2,side3);
         assertEquals(expectedResult,actualResult);
     }
+
+    @DisplayName("Test with a=2, b=2, c=3")
+    @Test
+    void classifyTriangleCase2() {
+        int side1 = 2;
+        int side2 = 2;
+        int side3 = 3;
+        String expectedResult = "tam giác cân";
+        String actualResult = TriangleClassifier.classifyTriangle(side1,side2,side3);
+        assertEquals(expectedResult,actualResult);
+    }
 }
